@@ -1,0 +1,496 @@
+<html>
+    <head>
+        <title>Page1</title>
+        <link rel="stylesheet" href="page1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div id="containers">
+            <div id="nav-container">
+                <center>
+                    <span>
+                    <div class="circle"><h1>1</h1></div>  
+                    </span>
+                    <hr>
+                    <div class="circle"><h1>2</h1></div>
+                    <hr>
+                    <div class="circle"><h1>3</h1></div>
+                    <hr>
+                    <div class="circle"><h1>4</h1></div>
+                </center>
+            
+            </div>
+            <div id="main-container">
+                <div id="inner-main-container">
+                    <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv()"></i>
+                        <p id="t1">Booking Party Information</p>
+                        <p id="t2">(Enter as much as possible)</p>
+                    </span>
+                    <div id="booking-party-information">
+                        
+                        <div id="bpi-input-fields">
+                            <div id="h1">
+                                <span id="input-span"><p id="input-text">First Name</p> <input type="text" name="" id="inputs"></span>
+                                <span id="input-span">
+                                    <p id="input-text">Booking Contact Name</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Phone Number</p> <input type="text" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h1">
+                                <span id="input-span">
+                                    <p id="input-text">Billing Address</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Zip/Postal Code</p> <input type="number" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Phone Number</p> <input type="number" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">Role</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span2">
+                                    <p id="input-text">Name of the Client</p> <input type="text" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">Lead Council(s) Information</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span2">
+                                    <p id="input-text">-</p> <input type="text" name="" id="inputs" placeholder="Email">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">-</p><button style="margin-right: 12px;">+</button><input type="text" name="" id="inputs">
+                                </span>
+
+                            </div>
+                           
+                        </div>
+                </div>
+                <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv1()"></i>
+                    <p id="t1">Opposing Party Information</p>
+                </span>
+                <div id="booking-party-information1">
+                    
+                    <div id="bpi-input-fields">
+                        <div id="h1">
+                            <span id="input-span">
+                                <p id="input-text">First Name</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Booking Contact Name</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Phone Number</p> <input type="text" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h1">
+                            <span id="input-span">
+                                <p id="input-text">Billing Address</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Zip/Postal Code</p> <input type="number" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Phone Number</p> <input type="number" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">Role</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span2">
+                                <p id="input-text">Name of the Client</p> <input type="text" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">Lead Council(s) Information</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span2">
+                                <p id="input-text">-</p> <input type="text" name="" id="inputs" placeholder="Email">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">-</p><button style="margin-right: 12px;">+</button><input type="text" name="" id="inputs">
+                            </span>
+                
+                        </div>
+                        
+                
+                    </div>
+                    <button id="button"
+                        style="height:45px;width: 250px;left: -569px;margin-top: 50px;background-color:dimgrey;font-size: large;" onclick="toggleDivtemp()">
+                        +Additional Parties</button>
+                </div>
+                <div id="booking-party-information-temp" style="display: none">
+                
+                    <div id="bpi-input-fields">
+                        <div id="h1">
+                            <span id="input-span">
+                                <p id="input-text">First Name</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Booking Contact Name</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Phone Number</p> <input type="text" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h1">
+                            <span id="input-span">
+                                <p id="input-text">Billing Address</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Zip/Postal Code</p> <input type="number" name="" id="inputs">
+                            </span>
+                            <span id="input-span">
+                                <p id="input-text">Phone Number</p> <input type="number" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">Role</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span2">
+                                <p id="input-text">Name of the Client</p> <input type="text" name="" id="inputs">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">Lead Council(s) Information</p> <input type="text" name="" id="inputs">
+                            </span>
+                            <span id="input-span2">
+                                <p id="input-text">-</p> <input type="text" name="" id="inputs" placeholder="Email">
+                            </span>
+                        </div>
+                        <div id="h2">
+                            <span id="input-span2">
+                                <p id="input-text">-</p><button style="margin-right: 12px;">+</button><input type="text" name=""
+                                    id="inputs">
+                            </span>
+                
+                        </div>
+                
+                
+                    </div>
+                
+                </div>
+
+                
+                </div>
+            </div>
+
+            <div id="main-container">
+                <div id="inner-main-container">
+                    <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv2()"></i>
+                    
+                        <p id="t1">Basic Logistics</p>
+                    </span>
+                    <div id="booking-party-information2">
+                       
+                            <span style="display: inline-block;">
+                            <p id="t1" style="font-size: medium;">Upload cover page (optional)</p>
+                            <input type="file" name="Upload">
+                            </span>
+    
+                       
+                        <div id="bpi-input-fields">
+                            <div id="h1">
+                                <span id="input-span">
+                                    <p id="input-text">style of Cause</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Court File #</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Booking Date</p> <input type="date" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h1">
+                                <span id="input-span">
+                                    <p id="input-text">start Time</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">End Time</p> <input type="number" name="" id="inputs">
+                                </span>
+                                <span id="input-span">
+                                    <p id="input-text">Time Zone</p> <input type="number" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">Role</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span2">
+                                    <p id="input-text">Name of the Client</p> <input type="text" name="" id="inputs">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">Lead Council(s) Information</p> <input type="text" name="" id="inputs">
+                                </span>
+                                <span id="input-span2">
+                                    <p id="input-text">-</p> <input type="text" name="" id="inputs" placeholder="Email">
+                                </span>
+                            </div>
+                            <div id="h2">
+                                <span id="input-span2">
+                                    <p id="input-text">-</p><button style="margin-right: 12px;">+</button><input type="text" name=""
+                                        id="inputs">
+                                </span>
+            
+                            </div>
+                        </div>
+                        </div>
+                        <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv3()"></i>
+                            <p id="t1">Virtual Logistics</p>
+                        </span>
+                        <div id="booking-party-information3">
+                           
+                            <span style="display: inline-block;">
+                                <p  style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Do you require VCM</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+
+
+                            </span>
+                            <div id="bpi-input-fields">
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">is there any particular VCM you want to work with</p> <input type="text" name="" id="inputs">
+                                    </span>
+                                </div>
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">Select Virtual Platforms</p> <input type="text" name="" id="inputs">
+                                    </span>
+                                    <span id="input-span">
+                                        <p id="input-text">Number of breakdown rooms</p> <input type="number" name="" id="inputs">
+                                    </span>
+                                </div>
+
+                            </div>
+                            <span style="display: inline-block;">
+                                <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Do you need us to provide Document
+                                    Managing Service</p>
+                                <span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Do you have any special accomdation for
+                                        booking that our I.T team can look into prior to the start data ?</p>
+                                    <span id="input-span2">
+                                        <p id="input-text">-</p> <input type="text" name="" id="inputs" >
+                                    </span>
+                                    
+                                </span>
+                            </span>
+                            
+
+                        </div>
+                        <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv4()"></i>
+                            <p id="t1">Court reporting</p>
+                        </span>  
+                        <div id="booking-party-information4">
+                           
+                            <span style="display: inline-block;">
+                                <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">will this matter plan to have a court reporter</p>
+                                <label class="switch">
+                                    <input type="checkbox" onclick="change_invisible()">
+                                    <span class="slider round"></span>
+                                </label>
+                        
+                            </span>
+                            <div id="invisible" style="display: none;">
+                                <span style="display:
+                                 inline-block;">
+                                    <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">would you like an arbitration place court Reporter?</p>
+                                    <label class="switch">
+                                        <input type="checkbox" >
+                                        <span class="slider round"></span>
+                                    </label>
+                                
+                                </span>
+                                <div id="h1">
+                                <span id="input-span">
+                                    <p id="input-text">Is there a specific arbitration place court Reporter you prefer?</p> <input type="text" name="" id="inputs">
+                                </span>
+                                </div>
+                                <span >
+                                <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">will a transcript be required?</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                </span>
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">Turnaround Time</p> <input type="number"
+                                            name="" id="inputs">
+                                    </span>
+                                </div>
+                                <span>
+                                    <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Multilingual ?</p>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </span>
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">Please List the non english language you would like accomdated(separate comma)</p> <input type="number" name="" id="inputs">
+                                    </span>
+                                </div>
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">Daily Rough Draft?</p> <input type="number" name="" id="inputs">
+                                    </span>
+                                </div>
+                                <div id="h1">
+                                    <span id="input-span">
+                                        <p id="input-text">Reatime reporting</p> <input type="number" name="" id="inputs">
+                                    </span>
+                                </div>
+
+                                
+
+
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                        <span id="span1"><i class="fa fa-chevron-up" style="font-size:12px" onclick="toggleDiv5()"></i>
+                            <p id="t1">Additional Feauters </p>
+                        </span>
+                        <div id="booking-party-information5">
+                    
+                        <span style="display: inline-block;">
+                            <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Do you require interpreatation?</p>
+                            <label class="switch">
+                                <input type="checkbox" onclick="change_invisible1()">
+                                <span class="slider round"></span>
+                            </label>
+                        </span>
+                        <div id="invisible1" style="display:none;">
+                            <span id="input-span">
+                                <p id="input-text">Please list all languages to be interpreted (separated by comma)</p> <input type="text" name="" id="inputs">
+                            </span>
+                        </div>
+
+                        <span style="display: inline-block;" id="h1">
+                            <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">Do you require CART service?</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        
+                        
+                        </span>
+                        <span style="display: inline-block;" id="h1">
+                            <p style="font-size: medium;font-weight: 300;size: 14px;font-weight: 300;">will you need a quote prior to conformation?</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </span>                    
+                        </div>
+                        <div>
+                            <p>Please list any additional requests or consideration you might have at this time</p>
+                            <input type="text" id="input" style="height: 50px;width: 400px;">
+                        </div>
+                    </div>
+        <script>
+                $("#button").click(function () {
+                        $(".divBox:hidden").first().slideDown();
+                    });
+
+                    function toggleDiv() {
+                            var x = document.getElementById("booking-party-information");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            } }
+                            function toggleDiv1() {
+                                    var x = document.getElementById("booking-party-information1");
+                                    if (x.style.display === "none") {
+                                        x.style.display = "block";
+                                    } else {
+                                        x.style.display = "none";
+                                    }
+                                }
+                                function toggleDiv2() {
+                                        var x = document.getElementById("booking-party-information2");
+                                        if (x.style.display === "none") {
+                                            x.style.display = "block";
+                                        } else {
+                                            x.style.display = "none";
+                                        }
+                                    }
+                                    function toggleDiv3() {
+                                            var x = document.getElementById("booking-party-information3");
+                                            if (x.style.display === "none") {
+                                                x.style.display = "block";
+                                            } else {
+                                                x.style.display = "none";
+                                            }
+                                        }
+                                        function toggleDiv4() {
+                                                var x = document.getElementById("booking-party-information4");
+                                                if (x.style.display === "none") {
+                                                    x.style.display = "block";
+                                                } else {
+                                                    x.style.display = "none";
+                                                }
+                                            }
+                                            function toggleDiv5() {
+                                                    var x = document.getElementById("booking-party-information5");
+                                                    if (x.style.display === "none") {
+                                                        x.style.display = "block";
+                                                    } else {
+                                                        x.style.display = "none";
+                                                    }
+                                                }
+                                                function toggleDivtemp() {
+                                                        var x = document.getElementById("booking-party-information-temp");
+                                                        if (x.style.display === "none") {
+                                                            x.style.display = "block";
+                                                        } else {
+                                                            x.style.display = "none";
+                                                        }
+                                                    }
+                                                
+                                                function change_invisible() {
+                                                        var x = document.getElementById("invisible");
+                                                        if (x.style.display === "none") {
+                                                            x.style.display = "block";
+                                                        } else {
+                                                            x.style.display = "none";
+                                                        }
+                                                    }
+                                                    function change_invisible1() {
+                                                            var x = document.getElementById("invisible1");
+                                                            if (x.style.display === "none") {
+                                                                x.style.display = "block";
+                                                            } else {
+                                                                x.style.display = "none";
+                                                            }
+                                                        }
+        </script>
+    </body>
+</html>
